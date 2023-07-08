@@ -1,0 +1,5 @@
+-set up eslint
+-set up environment variables
+-set up absolute imports instead of relative imports
+- theme configurations -> applying theme
+- router and navigation (using router-dom with <browserRouter>/<Routes>/<Route>) <--- probably change with nextjs
