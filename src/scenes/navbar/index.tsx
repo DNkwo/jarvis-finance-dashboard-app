@@ -4,7 +4,7 @@ import { Box, Typography, useTheme } from "@mui/material";
 import FlexBetween from "@/components/FlexBetween";
 import AutoGraphIcon from "@mui/icons-material/AutoGraph";
 
-type Props = {};
+type Props = object;
 
 const NavBar = (props: Props) => {
   const { palette } = useTheme();
