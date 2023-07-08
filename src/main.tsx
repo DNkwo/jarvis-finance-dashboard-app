@@ -9,9 +9,10 @@ import { api } from "@/state/api";
 
 export const store = configureStore({
   reducer: {
+    //Add the generated reducer as a specific top-level slice
     [api.reducerPath]: api.reducer, //set up our api reducer path (our redux toolkit query api slice)
   },
-  middleware: (getDefault) => getDefault().concat(api.middleware), //configuration stuff
+  middleware: (getDefault) => getDefault().concat(api.middleware), //manage cache lifetimes and subscriptions
 });
 
 setupListeners(store.dispatch);

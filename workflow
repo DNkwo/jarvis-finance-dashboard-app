@@ -13,3 +13,10 @@ in combination, with materiaul ui styling
 
 - used CSS Grids to develop a flexible dashboard, used
 styled components to extend Box to create call Boxes
+
+- setting up redux tookit and configuration for the backend
+api, utilises the createApi function to generate queries,
+referenced at kpi/kpis/
+
+
+- Set up back end installations: setting up express and adding necessary middleware components
