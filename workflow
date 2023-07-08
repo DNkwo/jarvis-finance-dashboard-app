@@ -19,4 +19,7 @@ api, utilises the createApi function to generate queries,
 referenced at kpi/kpis/
 
 
-- Set up back end installations: setting up express and adding necessary middleware components
+- Set up back end installations: setting up express and adding necessary middleware components, installing them using "npm -i ..." and then using express' "app.use()"
+
+- Setting up MongoDB Installation and using mongoose to create a connection between
+the MongoDB and the node.js runtime environment. We utilised the express.js "app.listen()" to bind and listen to the connections on the specified host and port. In otherwords creating a ahttp server object, configuring it to received incoming TCP connections on that specified address.
