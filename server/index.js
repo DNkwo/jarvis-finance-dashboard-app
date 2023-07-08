@@ -6,6 +6,9 @@ import cors from "cors";
 import dotenv from "dotenv";
 import helmet from "helmet";
 import morgan from "morgan";
+import kpiRoutes from "./routes/kpi.js";
+import KPI from "./models/KPI.js";
+import { kpis } from "./data/data.js";
 
 /* CONFIGURATIONS */
 dotenv.config();
@@ -18,6 +21,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
+
+/* ROUTES */
+app.use("/kpi", kpiRoutes);
+
 console.log("hello");
 
 /* MONGOOSE SETUP */
@@ -29,5 +36,12 @@ mongoose
   })
   .then(async () => {
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
+    
+
+    /* ADD DATE ONE TIME or when needed */
+    // await mongoose.connection.db.dropDatabase(); //drop database info, so no duplicates
+    // KPI.insertMany(kpis);
+
+
   })
   .catch((error) => console.log(`${error} did not connect`));
