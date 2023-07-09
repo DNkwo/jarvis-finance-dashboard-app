@@ -23,3 +23,9 @@ referenced at kpi/kpis/
 
 - Setting up MongoDB Installation and using mongoose to create a connection between
 the MongoDB and the node.js runtime environment. We utilised the express.js "app.listen()" to bind and listen to the connections on the specified host and port. In otherwords creating a ahttp server object, configuring it to received incoming TCP connections on that specified address.
+
+- Then set up our first back end api, to complete a GET Request to return an object
+from the mongoDB. We use mongoose to define the schema, and use express.Router() to
+handle our api routing.
+
+-part of the dashboard-ui implemented using the recharts library, we developed components that extended the Box components to develop effective UI. Developed a types folder to accomadate all the data types.
