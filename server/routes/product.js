@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get("/products", async (req, res) => {
   try {
-    const products = await KPI.find(); //grabs all kpis
+    const products = await Product.find(); //searches database collection, grabbing a list
     res.status(200).json(products); //sends it to the front end
 
   } catch (error) {
