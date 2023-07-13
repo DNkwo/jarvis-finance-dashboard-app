@@ -4,9 +4,8 @@ import { Box, Typography, useTheme } from "@mui/material";
 import FlexBetween from "@/components/FlexBetween";
 import AutoGraphIcon from "@mui/icons-material/AutoGraph";
 
-type Props = object;
 
-const NavBar = (props: Props) => {
+const NavBar = () => {
   const { palette } = useTheme();
   const [selected, setSelected] = useState("dashboard");
 
@@ -14,7 +13,7 @@ const NavBar = (props: Props) => {
     <FlexBetween mb="0.25rem" p="0.5rem 0rem" color={palette.grey[300]}>
       {/* LEFT SIDE */}
       <FlexBetween gap="0.75rem">
-        <AutoGraphIcon sx={{ fontSize: "28px" }} />
+        <AutoGraphIcon sx={{ fontSize: "28px", color: palette.secondary[500]}} />
         <Typography variant="h4" fontSize="16px">
           Jarvis
         </Typography>

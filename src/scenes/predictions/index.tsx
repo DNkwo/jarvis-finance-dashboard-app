@@ -16,9 +16,8 @@ import {
 } from "recharts";
 import regression, {DataPoint} from "regression";
 
-type Props = {};
 
-const Predictions = (props: Props) => {
+const Predictions = () => {
   const { palette } = useTheme();
   const [isPredictions, setIsPredictions] = useState(false);
 
